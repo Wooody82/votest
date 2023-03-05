@@ -1,4 +1,132 @@
 body {
-  background: steelblue;
-  color: white;
+  color: #000;
+  overflow: hidden;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1232px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.carousel-thumbs {
+  display: none;
+}
+
+.carousel-nav {
+  display: none;
+}
+
+.carousel-nav .prev {
+  transform: rotateY(180deg);
+  background: none;
+  border: none;
+  padding: 0;
+  transition: opacity 0.5s ease 0s;
+}
+
+.carousel-nav .next {
+  background: none;
+  border: none;
+  padding: 0;
+  transition: opacity 0.5s ease 0s;
+}
+
+@media (max-width: 767px) {
+  .carousel-thumbs {
+    display: block;
+  }
+}
+
+@media (min-width: 767px) {
+  .carousel-nav {
+    margin-top: 15px;
+    text-align: right;
+    display: block;
+  }
+}
+
+
+.carousel-img-wrap {
+  width: 100%;
+  position: relative;
+}
+
+.carousel-img-wrap>div {
+  position: unset !important;
+}
+
+.carousel-img {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+
+h3 {
+  margin-top: 0.5em;
+}
+
+h3 small {
+  font-weight: normal;
+}
+
+.carousel-item a:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.carousel-link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.sub-head {
+  text-transform: uppercase;
+  color: #707070;
+  font-weight: bold;
+}
+
+
+button[disabled] {
+  opacity: 0.4;
+  color: rgba(0, 0, 0, 0.92);
+}
+
+.use-spring-carousel-thumbs-wrapper {
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.readmore {
+  padding-right: 20px;
+}
+
+.readmore,
+.shop {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2a609d;
+  font-size: 0.875rem;
+}
+
+.extra-links {
+  padding-top: 20px;
+  text-align: center;
 }
